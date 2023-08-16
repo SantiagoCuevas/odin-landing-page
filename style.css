@@ -1,43 +1,143 @@
 body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", arial;
+  /* text-align: center; */
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  background-color: black;
 }
 
-.hero-logo {
-  border: 2px solid wheat;
-  height: auto;
-  max-width: 5%;
-}
-
+/* Header */
 .header {
   background-color: #1f2937;
   color: white;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+.logo-text,
+.links {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 24px;
+}
+.logo-text img {
+  height: auto;
+  width: 12%;
+}
+h2 {
+  font-size: 24px;
+  color: #f9faf8;
+}
+.links {
+  justify-content: flex-end;
+}
+.links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-.hero-container {
+/* Hero Container */
+.hero {
   background-color: #1f2937;
   display: flex;
+  padding: 20px 200px 40px;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  align-items: flex-start;
+}
+.hero-main-text {
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #f9faf8;
+  text-align: left;
+}
+.hero-secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-align: left;
+}
+.hero-button {
+  color: white;
+  border-color: #3882f6;
+  background-color: #3882f6;
+  padding: 10px 35px;
+  border-radius: 6px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.right {
+  align-items: flex-end;
+}
+.hero-img {
+  height: auto;
+  max-width: 80%;
 }
 
-.images-container {
+/* Images Container */
+.images {
   background-color: white;
+  padding: 20px 190px 100px 190px;
+  display: flex;
+  flex-direction: column;
+}
+.images-title {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+.pic-info {
+  display: flex;
+  flex-direction: row;
+}
+.photo-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pic-info img {
+  height: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border: solid #3882f6 5px;
+  border-radius: 6px;
+}
+.pic-info p {
+  font-size: 18px;
+  color: #66686a;
+  text-align: center;
+  display: flex;
 }
 
-.quote-container {
+/* Quote Container */
+.quote {
   background-color: #e5e7eb;
   flex: 1;
 }
 
-.sign-up-container {
+/* Sign Up Container */
+.sign-up {
   background-color: white;
   flex: 1;
 }
 
+/* Footer */
 .footer {
   background-color: #1f2937;
   color: white;
